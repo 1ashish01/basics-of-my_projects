@@ -1,0 +1,31 @@
+# basics-of-my_projects
+
+# importing pandas library
+import pandas as pd
+import numpy as np
+
+open('/Users/your_username/Desktop/data/data.csv', 'r') as f:
+df = pd.read_csv(f)
+
+#show the first 5 rows using dataframe.head() method
+print("The first 5 rows of the dataframe") 
+df.head(5)
+
+Question #1: 
+Check the bottom 10 rows of data frame "df"?
+
+Ans-print("The last 10 rows of the dataframe\n")
+df.tail(10)
+
+Question #2: 
+Find the name of the columns of the dataframe.
+Ans- print(df.columns)
+
+Question #3: ¶
+You can select the columns of a dataframe by indicating the name of each column. For example, you can select the three columns as follows:
+dataframe[[' column 1 ',column 2', 'column 3']]
+Where "column" is the name of the column, you can apply the method ".describe()" to get the statistics of those columns as follows:
+dataframe[[' column 1 ',column 2', 'column 3'] ].describe()
+Apply the method to ".describe()" to the columns 'length' and 'compression-ratio'.
+
+Ans- df[['length', 'compression-ratio']].describe()
