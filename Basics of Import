@@ -1,0 +1,15 @@
+#installation of specific version of libraries used in lab in my notebook
+mamba install pandas==1.3.3  -y
+mamba install numpy=1.21.2 -y
+
+
+#IF you are running the lab in your  browser, so we will install the libraries using ``piplite``
+import piplite
+import micropip
+await piplite.install(['pandas'])
+await piplite.install(['matplotlib'])
+await piplite.install(['scipy'])
+await piplite.install(['seaborn'])
+await micropip.install(['ipywidgets'],keep_going=True)
+await micropip.install(['tqdm'],keep_going=True)
+
