@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Data
+marks = [80, 75, 85, 90]
+tests = ['Cycle Test 1', 'Cycle Test 2', 'Cycle Test 3', 'Cycle Test 4']
+
+# Create a bar plot
+plt.bar(tests, marks)
+
+# Add labels and title
+plt.xlabel('Cycle Tests')
+plt.ylabel('Marks')
+plt.title('Marks in Cycle Tests')
+
+# Show the plot
+plt.show()
